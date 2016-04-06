@@ -35,6 +35,7 @@ inherits(PatternMatch, Transform);
 //optionally implement a method called _flush. You assignment will implement both.
 
 PatternMatch.prototype._transform = function (chunk, encoding, getNextChunk){
+	console.log(chunk.toString());
 	var chunks = chunk.toString().split(this.pattern);
 	if(chunks.length == 1){
 		this.remaingCharacters = (this.remaingCharacters || "") + chunks[0];
@@ -67,6 +68,7 @@ var inputStream = fileSystem.createReadStream( "input-sensor.txt" );
 
 // Create a Pattern Matching stream that will run through the input and find matches
 // for the given pattern at the command line - "." and “,”.
+console.log("-------------------------Input-------------------------");
 var patternStream = inputStream.pipe( new PatternMatch(program.pattern));
 var matches = [];
 // Read matches from the stream.
@@ -79,6 +81,7 @@ patternStream.on('readable', function(){
 });
 
 patternStream.on('end', function(){
+	console.log("-------------------------Output-------------------------");
 	console.log(matches);
 });
 
