@@ -1,0 +1,265 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 warn package.json HW3@1.0.0 No description
+5 warn package.json HW3@1.0.0 No repository field.
+6 warn package.json HW3@1.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose install where, deps [ '/Users/mitchellwaldman/Documents/Programming/CMPE172/HW3',
+8 verbose install   [ 'underscore', 'commander' ] ]
+9 info preinstall HW3@1.0.0
+10 verbose readDependencies using package.json deps
+11 verbose cache add [ 'commander@*', null ]
+12 verbose cache add name=undefined spec="commander@*" args=["commander@*",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'commander@*',
+13 verbose parsed url   path: 'commander@*',
+13 verbose parsed url   href: 'commander@*' }
+14 verbose cache add [ 'underscore@*', null ]
+15 verbose cache add name=undefined spec="underscore@*" args=["underscore@*",null]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: 'underscore@*',
+16 verbose parsed url   path: 'underscore@*',
+16 verbose parsed url   href: 'underscore@*' }
+17 verbose cache add name="commander" spec="*" args=["commander","*"]
+18 verbose parsed url { protocol: null,
+18 verbose parsed url   slashes: null,
+18 verbose parsed url   auth: null,
+18 verbose parsed url   host: null,
+18 verbose parsed url   port: null,
+18 verbose parsed url   hostname: null,
+18 verbose parsed url   hash: null,
+18 verbose parsed url   search: null,
+18 verbose parsed url   query: null,
+18 verbose parsed url   pathname: '*',
+18 verbose parsed url   path: '*',
+18 verbose parsed url   href: '*' }
+19 verbose addNamed [ 'commander', '*' ]
+20 verbose addNamed [ null, '*' ]
+21 verbose cache add name="underscore" spec="*" args=["underscore","*"]
+22 verbose parsed url { protocol: null,
+22 verbose parsed url   slashes: null,
+22 verbose parsed url   auth: null,
+22 verbose parsed url   host: null,
+22 verbose parsed url   port: null,
+22 verbose parsed url   hostname: null,
+22 verbose parsed url   hash: null,
+22 verbose parsed url   search: null,
+22 verbose parsed url   query: null,
+22 verbose parsed url   pathname: '*',
+22 verbose parsed url   path: '*',
+22 verbose parsed url   href: '*' }
+23 verbose addNamed [ 'underscore', '*' ]
+24 verbose addNamed [ null, '*' ]
+25 silly lockFile bb4edd54-commander commander@*
+26 verbose lock commander@* /Users/mitchellwaldman/.npm/bb4edd54-commander.lock
+27 silly lockFile 67e8a6a2-underscore underscore@*
+28 verbose lock underscore@* /Users/mitchellwaldman/.npm/67e8a6a2-underscore.lock
+29 silly addNameRange { name: 'underscore', range: '*', hasData: false }
+30 silly addNameRange { name: 'commander', range: '*', hasData: false }
+31 verbose request where is /underscore
+32 verbose request registry https://registry.npmjs.org/
+33 verbose request id e56cccf73bae4f69
+34 verbose url raw /underscore
+35 verbose url resolving [ 'https://registry.npmjs.org/', './underscore' ]
+36 verbose url resolved https://registry.npmjs.org/underscore
+37 verbose request where is https://registry.npmjs.org/underscore
+38 info trying registry request attempt 1 at 21:16:59
+39 verbose etag "7XWFAVIP98M6Z1WWGKZU58013"
+40 http GET https://registry.npmjs.org/underscore
+41 verbose request where is /commander
+42 verbose request registry https://registry.npmjs.org/
+43 verbose url raw /commander
+44 verbose url resolving [ 'https://registry.npmjs.org/', './commander' ]
+45 verbose url resolved https://registry.npmjs.org/commander
+46 verbose request where is https://registry.npmjs.org/commander
+47 info trying registry request attempt 1 at 21:16:59
+48 verbose etag "BFL58XYFUY6YE9LTHV68QYDVV"
+49 http GET https://registry.npmjs.org/commander
+50 http 200 https://registry.npmjs.org/commander
+51 silly registry.get cb [ 200,
+51 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+51 silly registry.get     etag: '"8MMIG46BNV1DB57XWRKM6PENP"',
+51 silly registry.get     'content-type': 'application/json',
+51 silly registry.get     'content-encoding': 'gzip',
+51 silly registry.get     'cache-control': 'max-age=300',
+51 silly registry.get     'content-length': '12504',
+51 silly registry.get     'accept-ranges': 'bytes',
+51 silly registry.get     date: 'Wed, 06 Apr 2016 04:16:58 GMT',
+51 silly registry.get     via: '1.1 varnish',
+51 silly registry.get     age: '14',
+51 silly registry.get     connection: 'keep-alive',
+51 silly registry.get     'x-served-by': 'cache-dfw1839-DFW',
+51 silly registry.get     'x-cache': 'HIT',
+51 silly registry.get     'x-cache-hits': '1',
+51 silly registry.get     'x-timer': 'S1459916218.855239,VS0,VE0',
+51 silly registry.get     vary: 'Accept-Encoding' } ]
+52 silly addNameRange number 2 { name: 'commander', range: '*', hasData: true }
+53 silly addNameRange versions [ 'commander',
+53 silly addNameRange   [ '0.0.1',
+53 silly addNameRange     '0.0.3',
+53 silly addNameRange     '0.0.4',
+53 silly addNameRange     '0.0.5',
+53 silly addNameRange     '0.1.0',
+53 silly addNameRange     '0.2.0',
+53 silly addNameRange     '0.2.1',
+53 silly addNameRange     '0.3.0',
+53 silly addNameRange     '0.3.1',
+53 silly addNameRange     '0.3.2',
+53 silly addNameRange     '0.3.3',
+53 silly addNameRange     '0.4.0',
+53 silly addNameRange     '0.4.1',
+53 silly addNameRange     '0.4.2',
+53 silly addNameRange     '0.4.3',
+53 silly addNameRange     '0.5.0',
+53 silly addNameRange     '0.5.1',
+53 silly addNameRange     '0.6.0',
+53 silly addNameRange     '0.6.1',
+53 silly addNameRange     '0.5.2',
+53 silly addNameRange     '1.0.0',
+53 silly addNameRange     '1.0.1',
+53 silly addNameRange     '1.0.2',
+53 silly addNameRange     '1.0.3',
+53 silly addNameRange     '1.0.4',
+53 silly addNameRange     '1.0.5',
+53 silly addNameRange     '1.1.0',
+53 silly addNameRange     '1.1.1',
+53 silly addNameRange     '1.2.0',
+53 silly addNameRange     '1.3.0',
+53 silly addNameRange     '1.3.1',
+53 silly addNameRange     '1.3.2',
+53 silly addNameRange     '2.0.0',
+53 silly addNameRange     '2.1.0',
+53 silly addNameRange     '2.2.0',
+53 silly addNameRange     '2.3.0',
+53 silly addNameRange     '2.4.0',
+53 silly addNameRange     '2.5.0',
+53 silly addNameRange     '2.5.1',
+53 silly addNameRange     '2.6.0',
+53 silly addNameRange     '2.7.0',
+53 silly addNameRange     '2.7.1',
+53 silly addNameRange     '2.8.0',
+53 silly addNameRange     '2.8.1',
+53 silly addNameRange     '2.9.0' ] ]
+54 verbose addNamed [ 'commander', '2.9.0' ]
+55 verbose addNamed [ '2.9.0', '2.9.0' ]
+56 silly lockFile 07267fc6-commander-2-9-0 commander@2.9.0
+57 verbose lock commander@2.9.0 /Users/mitchellwaldman/.npm/07267fc6-commander-2-9-0.lock
+58 silly lockFile fc4c5515-rg-commander-commander-2-9-0-tgz https://registry.npmjs.org/commander/-/commander-2.9.0.tgz
+59 verbose lock https://registry.npmjs.org/commander/-/commander-2.9.0.tgz /Users/mitchellwaldman/.npm/fc4c5515-rg-commander-commander-2-9-0-tgz.lock
+60 verbose addRemoteTarball [ 'https://registry.npmjs.org/commander/-/commander-2.9.0.tgz',
+60 verbose addRemoteTarball   '9c99094176e12240cb22d6c5146098400fe0f7d4' ]
+61 info retry fetch attempt 1 at 21:16:59
+62 verbose fetch to= /var/folders/_n/p0_6r4hd0yxd6nvp5f2ldvf80000gp/T/npm-97459-7mSJnQ1_/registry.npmjs.org/commander/-/commander-2.9.0.tgz
+63 http GET https://registry.npmjs.org/commander/-/commander-2.9.0.tgz
+64 http 200 https://registry.npmjs.org/underscore
+65 silly registry.get cb [ 200,
+65 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+65 silly registry.get     etag: '"C7RBM3BLQ9AEAIP0CLVGGZ9VP"',
+65 silly registry.get     'content-type': 'application/json',
+65 silly registry.get     'cache-control': 'max-age=300',
+65 silly registry.get     'content-length': '42619',
+65 silly registry.get     'accept-ranges': 'bytes',
+65 silly registry.get     date: 'Wed, 06 Apr 2016 04:16:58 GMT',
+65 silly registry.get     via: '1.1 varnish',
+65 silly registry.get     age: '137',
+65 silly registry.get     connection: 'keep-alive',
+65 silly registry.get     'x-served-by': 'cache-dfw1836-DFW',
+65 silly registry.get     'x-cache': 'HIT',
+65 silly registry.get     'x-cache-hits': '4',
+65 silly registry.get     'x-timer': 'S1459916218.863821,VS0,VE0',
+65 silly registry.get     vary: 'Accept-Encoding' } ]
+66 silly addNameRange number 2 { name: 'underscore', range: '*', hasData: true }
+67 silly addNameRange versions [ 'underscore',
+67 silly addNameRange   [ '1.0.3',
+67 silly addNameRange     '1.0.4',
+67 silly addNameRange     '1.1.0',
+67 silly addNameRange     '1.1.1',
+67 silly addNameRange     '1.1.2',
+67 silly addNameRange     '1.1.3',
+67 silly addNameRange     '1.1.4',
+67 silly addNameRange     '1.1.5',
+67 silly addNameRange     '1.1.6',
+67 silly addNameRange     '1.1.7',
+67 silly addNameRange     '1.2.0',
+67 silly addNameRange     '1.2.1',
+67 silly addNameRange     '1.2.2',
+67 silly addNameRange     '1.2.3',
+67 silly addNameRange     '1.2.4',
+67 silly addNameRange     '1.3.0',
+67 silly addNameRange     '1.3.1',
+67 silly addNameRange     '1.3.2',
+67 silly addNameRange     '1.3.3',
+67 silly addNameRange     '1.4.0',
+67 silly addNameRange     '1.4.1',
+67 silly addNameRange     '1.4.2',
+67 silly addNameRange     '1.4.3',
+67 silly addNameRange     '1.4.4',
+67 silly addNameRange     '1.5.0',
+67 silly addNameRange     '1.5.1',
+67 silly addNameRange     '1.5.2',
+67 silly addNameRange     '1.6.0',
+67 silly addNameRange     '1.7.0',
+67 silly addNameRange     '1.8.0',
+67 silly addNameRange     '1.8.1',
+67 silly addNameRange     '1.8.2',
+67 silly addNameRange     '1.8.3' ] ]
+68 verbose addNamed [ 'underscore', '1.8.3' ]
+69 verbose addNamed [ '1.8.3', '1.8.3' ]
+70 silly lockFile e5e32fca-underscore-1-8-3 underscore@1.8.3
+71 verbose lock underscore@1.8.3 /Users/mitchellwaldman/.npm/e5e32fca-underscore-1-8-3.lock
+72 silly lockFile d5ea30aa--underscore-underscore-1-8-3-tgz https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz
+73 verbose lock https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz /Users/mitchellwaldman/.npm/d5ea30aa--underscore-underscore-1-8-3-tgz.lock
+74 verbose addRemoteTarball [ 'https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz',
+74 verbose addRemoteTarball   '4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022' ]
+75 info retry fetch attempt 1 at 21:16:59
+76 verbose fetch to= /var/folders/_n/p0_6r4hd0yxd6nvp5f2ldvf80000gp/T/npm-97459-7mSJnQ1_/registry.npmjs.org/underscore/-/underscore-1.8.3.tgz
+77 http GET https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz
+78 http 200 https://registry.npmjs.org/commander/-/commander-2.9.0.tgz
+79 silly lockFile fc4c5515-rg-commander-commander-2-9-0-tgz https://registry.npmjs.org/commander/-/commander-2.9.0.tgz
+80 silly lockFile fc4c5515-rg-commander-commander-2-9-0-tgz https://registry.npmjs.org/commander/-/commander-2.9.0.tgz
+81 silly lockFile 07267fc6-commander-2-9-0 commander@2.9.0
+82 silly lockFile 07267fc6-commander-2-9-0 commander@2.9.0
+83 silly lockFile bb4edd54-commander commander@*
+84 silly lockFile bb4edd54-commander commander@*
+85 http 200 https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz
+86 silly lockFile d5ea30aa--underscore-underscore-1-8-3-tgz https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz
+87 silly lockFile d5ea30aa--underscore-underscore-1-8-3-tgz https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz
+88 silly lockFile e5e32fca-underscore-1-8-3 underscore@1.8.3
+89 silly lockFile e5e32fca-underscore-1-8-3 underscore@1.8.3
+90 silly lockFile 67e8a6a2-underscore underscore@*
+91 silly lockFile 67e8a6a2-underscore underscore@*
+92 error Error: EACCES, mkdir '/Users/mitchellwaldman/.npm/commander/2.9.0'
+92 error  { [Error: EACCES, mkdir '/Users/mitchellwaldman/.npm/commander/2.9.0']
+92 error   errno: 3,
+92 error   code: 'EACCES',
+92 error   path: '/Users/mitchellwaldman/.npm/commander/2.9.0',
+92 error   parent: 'HW3' }
+93 error Please try running this command again as root/Administrator.
+94 error System Darwin 13.4.0
+95 error command "node" "/usr/local/bin/npm" "install"
+96 error cwd /Users/mitchellwaldman/Documents/Programming/CMPE172/HW3
+97 error node -v v0.10.33
+98 error npm -v 1.4.28
+99 error path /Users/mitchellwaldman/.npm/commander/2.9.0
+100 error code EACCES
+101 error errno 3
+102 error stack Error: EACCES, mkdir '/Users/mitchellwaldman/.npm/commander/2.9.0'
+103 verbose exit [ 3, true ]
